@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+    
+    <form action="/submit.php" method="POST" enctype="multipart/form-data">
+        <h1>Sign Up</h1>
+        <input type="text" name="full_name" placeholder="Full Name" required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="password" name="password" placeholder="Password" minlength="6" required><br>
+        <input type="date" name="dob" required><br>
+
+        <select name="gender" required>
+            <option value="">Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select><br>
+
+        <label>Hobbies:</label><br>
+        <input type="checkbox" name="hobbies[]" value="Reading"> Reading
+        <input type="checkbox" name="hobbies[]" value="Traveling"> Traveling
+        <input type="checkbox" name="hobbies[]" value="Gaming"> Gaming
+        <input type="checkbox" name="hobbies[]" value="Music"> Music
+        <input type="checkbox" name="hobbies[]" value="Cooking"> Cooking
+        <input type="checkbox" name="hobbies[]" value="Other"> Other<br>
+
+        <input type="file" name="profile_pic"><br>
+        <textarea name="bio" placeholder="Short Bio"></textarea><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
